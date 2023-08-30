@@ -1,4 +1,4 @@
-# html-ref
+# qref.pages.dev
 Quick Reference Pages on different topics.
 
 My Personal Reference Cards and Cheat Sheets.
