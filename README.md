@@ -1,6 +1,4 @@
 # html-ref
-Reference cards and cheat sheets for myself.
+My Personal Reference Cards and Cheat Sheets.
 
-This is just for myself. Nothing to see here.
-
-Short summary of w3schools lectures, codecademy, SO / SE, and other sources.
+Short summary of w3schools lectures, codecademy, SO / SE, and many other sources.
