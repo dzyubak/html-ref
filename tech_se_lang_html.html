@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML ref-card</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="vendor/css/prism.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <input type="button" id="expand-all" value="expand all" name="expand_all">
+<h1>HTML ref-card</h1>
+<ul>
+    <li>HTML Document
+        <ul>
+            <li>index.htm / index.html
+<pre><code class="language-html">&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+&lt;title>Page Title&lt;/title>
+&lt;/head>
+&lt;body>
+
+&lt;h1>My First Heading&lt;/h1>
+&lt;p title="I'm a tooltip">My first paragraph.&lt;/p>
+&lt;p style="font-size:50px;">font size 50px</p>
+&lt;p>&lt;a href="https://www.dzyubak.com">This is a link&lt;/a>&lt;/p>
+&lt;p style="color:red;">This is a red paragraph.&lt;/p>
+&lt;br>
+&lt;img src="dzyubak.jpg" alt="dzyubak" width="100" height="200">
+
+&lt;/body>
+&lt;/html></code></pre>
+            </li>
+            <li>HTML is Not Case Sensitive
+                <ul>
+                    <li>The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.</li>
+                </ul>
+            </li>
+            <li>HTML Elements
+                <ul>
+                    <li>nested elements <code class="language-html">&lt;div>&lt;span>&lt;/span>&lt;/div></code></li>
+                    <li>empty element without a closing tag <code class="language-html">&lt;br></code> defines a line break</li>
+                </ul>
+            </li>
+            <li>HTML attributes
+                <ul>
+                    <li>HTML attributes provide additional information about HTML elements.</li>
+                    <li>The HTML standard does not require quotes around attribute values. However, W3C recommends quotes in HTML, and demands quotes for stricter document types like XHTML.</li>
+                    <li>quotes around attribute values
+                        <ul>
+                            <li><code class="language-html">&lt;p title='one "two" tree'></code> double quotes are most common</li>
+                            <li><code class="language-html">&lt;p title="one 'two' tree"></code> single quotes can also be used</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>The &lt;!DOCTYPE> declaration is not case sensitive.
+                <ul>
+                    <li><code class="language-html">&lt;!DOCTYPE html></code> HTML5 &lt;!DOCTYPE> declaration</li>
+                </ul>
+            </li>
+            <li>&lt;html>
+                <ul>
+                    <li>&lt;html> element is the root element</li>
+                    <li>You should always include the lang attribute inside the &lt;html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+                        <ul>
+                            <li>HTML Language Code Reference https://www.w3schools.com/tags/ref_language_codes.asp</li>
+                            <li><code class="language-html">&lt;html lang="en"></code> or <code class="language-html">&lt;html lang="en-US"></code></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>&lt;h1> to &lt;h6> tags
+                <ul>
+                    <li>Note: Only use one &lt;h1> per page - this should represent the main heading/subject for the whole page. Also, do not skip heading levels - start with &lt;h1>, then use &lt;h2>, and so on.</li>
+                </ul>
+            </li>
+            <li>&lt;img>
+                <ul>
+                    <li>src
+                        <ul>
+                            <li>Absolute URL <code class="language-html">src="https://www.dzyubak.com/img/img1.jpg"</code></li>
+                            <li>Relative URL. If the URL begins without a slash, it will be relative to the current page. <code class="language-html"></code>src="img1.jpg"</li>
+                            <li>Relative URL. If the URL begins with a slash, it will be relative to the domain. <code class="language-html">src="/img/img1.jpg"</code></li>
+                        </ul>
+                    </li>
+                    <li>The &lt;img> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels)</li>
+                    <li>The required alt attribute for the &lt;img> tag specifies an alternate text for an image</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Browser: View HTML Source / Inspect an HTML Element
+        <ul>
+            <li>Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in Edge)</li>
+            <li>Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.</li>
+        </ul>
+    </li>
+    <li>URLs
+        <ul>
+            <li>WHATWG HTML5 Living Standard http://whatwg.org/html/</li>
+            <li>W3C Recommendation: HTML5 http://www.w3.org/TR/html5/</li>
+            <li>W3C Recommendation: HTML5.1 2nd Edition http://www.w3.org/TR/html51/</li>
+            <li>W3C Recommendation: HTML5.2 http://www.w3.org/TR/html52/</li>
+        </ul>
+    </li>
+</ul>
+        </div><!-- /.container -->
+        <script src="vendor/js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <script src="vendor/js/prism.js"></script>
+    </body>
+</html>
