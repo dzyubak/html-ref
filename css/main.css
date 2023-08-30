@@ -1,0 +1,241 @@
+body {
+    background-color: #222;
+    color: #ccc;
+}
+
+.container {
+    width: 800px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #333;
+}
+
+li {
+    margin: 1px 0;
+    list-style-image: none;
+}
+
+ul > li.collapsed { /* "ul > li" eliminates application to "ol > li" */
+    list-style-image:url(../vendor/img/fa-plus-square-o_16_0_000000_none.png);
+}
+
+ul > li.expanded {
+    list-style-image:url(../vendor/img/fa-minus-square-o_16_0_000000_none.png);
+}
+
+h1 {
+    color: #4f8a10;
+    text-align: center;
+}
+
+h2 {
+    border-top: 1px solid #7a987a;
+    color: #4f8a10;
+    font-size: 1.875em;
+    margin-top: 15px;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+h3 {
+    color: #4f8a10;
+}
+
+h4 {
+    color: #7a987a;
+}
+
+p {
+    margin: .3em 0;
+    line-height: 115%;
+}
+
+table, th, td {
+    border: 1px solid #777;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    padding: 7px;
+}
+
+td {
+    padding: 7px;
+}
+
+strong {
+    font-weight: bolder
+}
+
+i, cite, em,
+var, address {
+    font-style: italic
+}
+
+s, strike, del {
+    text-decoration: line-through
+}
+
+a {
+    color: #7a987a;
+}
+
+a:link {
+    color: #7a987a;
+}
+
+a:visited {
+    color: #7a987a;
+}
+
+a:hover {
+    color: #7a987a;
+    text-decoration: none;
+}
+
+a:active {
+    color: #7a987a;
+}
+
+a.index {
+    color: #7a987a;
+    text-decoration: none;
+}
+
+a.index:link {
+    color: #7a987a;
+    text-decoration: none;
+}
+
+a.index:visited {
+    color: #7a987a;
+    text-decoration: none;
+}
+
+a.index:hover {
+    color: #4f8a10;
+    text-decoration: none;
+}
+
+a.index:active {
+    color: #4f8a10;
+    text-decoration: none;
+}
+
+pre {
+    padding: .1em .5em;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    border: 1px #222 solid;
+    background-color: #444;
+    /* overflow-x: auto; add horizontal scrollbar where it is required */
+    white-space: pre-wrap;
+}
+
+pre.auto-br { /* automatically insert line breaks for text inside the pre tag */
+    white-space: pre-wrap;
+}
+
+/* reset "kbd" style and set the one specific to "pre kbd" */
+/*pre kbd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}*/
+
+mark {
+    background-color: yellow;
+    font-weight: bold;
+    /* color: black; */
+    /* text-decoration: underline; */
+}
+
+code {
+    /*margin: .3em;
+    padding: .1em .5em;*/
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    /*border: 1px #222 solid;*/
+    background-color: #444;
+}
+
+/* my style */
+/*kbd {
+    padding: .1em .5em;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    border: 1px #222 solid;
+    background-color: #444;
+}*/
+
+/* taken from
+http://meta.superuser.com/questions/4788/css-for-the-new-kbd-style */
+/*kbd {
+    -moz-border-radius: 3px;
+    -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    color: #333;
+    display: inline-block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    line-height: 1.4;
+    margin: 0 .1em;
+    padding: .1em .6em;
+    text-shadow: 0 1px 0 #fff;
+}*/
+
+kbd { /* taken directly from stackoverflow CSS */
+    display: inline-block;
+    margin: 0 .1em;
+    padding: .1em .6em;
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-size: 11px;
+    line-height: 1.4;
+    color: #242729;
+    text-shadow: 0 1px 0 #FFF;
+    background-color: #e1e3e5;
+    border: 1px solid #adb3b9;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(12,13,14,0.2),0 0 0 2px #FFF inset;
+    white-space: nowrap;
+    text-transform: capitalize; /* added by me; can also be "uppercase" */
+}
+
+span.gui {
+    /*margin: .3em;*/
+    /*padding: .1em .5em;*/
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    /*border: 1px #222 solid;*/
+    /*background-color: #444;*/
+    font-weight: bold;
+}
+
+blockquote {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding-left: 15px;
+    border-left: 3px #ccc solid;
+}
+
+abbr {
+    cursor: help;
+    font-family: "Courier New", Courier, monospace;
+    color: #F33;
+}
+
+img {
+    margin: .7em;
+}
