@@ -193,11 +193,11 @@ $(document).ready(function() {
         var $this = $(this);
         $this.children("td[colspan]").parent("tr").prev().children("td:last").append('<p style="margin:0;padding:0;text-align:right;"><button type="button" class="more-info-btn">more...</button></p>');
         $this.children("td[colspan]").parent("tr").css("display", "none");
-    });
-    $("tr").on("click", ".more-info-btn", function(){
-        var $this = $(this);
-        $this.text($this.text() == "more..." ? "less" : "more...");
-        $this.parents('tr').next('tr').toggle(300);
+        $this.on("click", ".more-info-btn", function(){
+            var $this = $(this);
+            $this.text($this.text() == "more..." ? "less" : "more...");
+            $this.parents('tr').next('tr').toggle(300);
+        });
     });
 });
         </script>
