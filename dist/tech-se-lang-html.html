@@ -5,6 +5,18 @@
         <title>HTML ref-card</title>
         <link href="css/main.css" rel="stylesheet" type="text/css">
         <link href="vendor/css/prism.css" rel="stylesheet" />
+        <style type="text/css">
+            #more-info td:nth-child(1) {
+                width: 40%;
+            }
+            #more-info td:nth-child(2) {
+                width: 40%;
+                text-align: center;
+            }
+            #more-info td:nth-child(3) {
+                width: 20%;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -32,8 +44,6 @@
 &lt;pre>fixed-width font line 1
 line 2
 line 3&lt;/pre>
-&lt;blockquote cite="https://en.wikipedia.org/wiki/HTML">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.&lt;/blockquote>
-&lt;p>&lt;q>To be, or not to be&lt;/q> is the opening phrase of a speech given by Prince Hamlet in the so-called "nunnery scene" of William Shakespeare's play Hamlet, Act 3, Scene 1.&lt;/p>
 &lt;/body>
 &lt;/html></code></pre>
             </li>
@@ -94,38 +104,6 @@ line 3&lt;/pre>
                     <li>The required alt attribute for the &lt;img> tag specifies an alternate text for an image</li>
                 </ul>
             </li>
-            <li>tag names
-                <ul>
-                    <li><code class="language-html">&lt;br /></code> line break</li>
-                    <li><code class="language-html">&lt;hr /></code> horizontal rule</li>
-                    <li><code class="language-html">&lt;pre>&lt;/pre></code> preformatted text</li>
-                    <li><code class="language-html">&lt;b>&lt;/b></code> bold text</li>
-                    <li><code class="language-html">&lt;strong>&lt;/strong></code> important text</li>
-                    <li><code class="language-html">&lt;i>&lt;/i></code> italic text</li>
-                    <li><code class="language-html">&lt;em>&lt;/em></code> emphasized text
-                        <ul>
-                            <li>A screen reader will pronounce the words in &lt;em> with an emphasis, using verbal stress.</li>
-                        </ul>
-                    </li>
-                    <li><code class="language-html">&lt;mark>&lt;/mark></code> marked text</li>
-                    <li><code class="language-html">&lt;small>&lt;/small></code> smaller text</li>
-                    <li><code class="language-html">&lt;del>&lt;/del></code> deleted text</li>
-                    <li><code class="language-html">&lt;ins>&lt;/ins></code> inserted text</li>
-                    <li><code class="language-html">&lt;sub>&lt;/sub></code> subscript text</li>
-                    <li><code class="language-html">&lt;sup>&lt;/sup></code> superscript text</li>
-                    <li><code class="language-html">&lt;blockquote cite="https://www.example.com/page.html">&lt;/blockquote></code> quotation</li>
-                    <li><code class="language-html">&lt;q>&lt;/q></code> short quotation</li>
-                    <li><code class="language-html">&lt;abbr title="HyperText Markup Language">HTML&lt;/abbr></code> abbreviation or acronym
-                        <ul>
-                            <li>Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.</li>
-                        </ul>
-                    </li>
-                    <li><code class="language-html">&lt;address>&lt;/address></code> contact information for the author/owner of a document or an article (e.g. email address, URL, physical address, phone number, social media handle, etc.)</li>
-                    <li><code class="language-html">&lt;cite>&lt;/cite></code> title of a creative work (e.g. book, musical score, song, movie, painting, computer program, forum post or comment, etc.)</li>
-                    <li><code class="language-html">&lt;bdo dir="rtl">&lt;/bdo></code> bi-directional override</li>
-                    <li><code class="language-html">&lt;!-- HTML comment --></code> HTML comment</li>
-                </ul>
-            </li>
             <li><code class="language-html">&lt;tagname attribute="property:value;"></code></li>
         </ul>
     </li>
@@ -162,12 +140,72 @@ line 3&lt;/pre>
         <td>horizontal rule</td>
     </tr>
     <tr>
+        <td><code class="language-html">&lt;pre>preformatted text&lt;/pre></code></td>
+        <td><pre>preformatted text</pre></td>
+        <td>preformatted text</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;b>bold&lt;/b></code></td>
+        <td><b>bold</b></td>
+        <td>bold text</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;strong>important&lt;/strong></code></td>
+        <td><strong>important</strong></td>
+        <td>important text</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;i>italic&lt;/i></code></td>
+        <td><i>italic</i></td>
+        <td>italic text</td>
+    </tr>
+    <tr>
         <td><code class="language-html">&lt;em>emphasized&lt;/em></code></td>
         <td><em>emphasized</em></td>
         <td>emphasized text</td>
     </tr>
     <tr>
         <td colspan="3">A screen reader will pronounce the words in &lt;em> with an emphasis, using verbal stress.</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;mark>marked&lt;/mark></code></td>
+        <td><mark>marked</mark></td>
+        <td>marked text</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;small>smaller&lt;/small></code></td>
+        <td><small>smaller</small></td>
+        <td>smaller text</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;del>deleted&lt;/del></code></td>
+        <td><del>deleted</del></td>
+        <td>deleted text</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;ins>inserted&lt;/ins></code></td>
+        <td><ins>inserted</ins></td>
+        <td>inserted text</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">H&lt;sub>2&lt;/sub>O, CO&lt;sub>2&lt;/sub></code></td>
+        <td>H<sub>2</sub>O, CO<sub>2</sub></td>
+        <td>subscript text</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">(a + b)&lt;sup>2&lt;/sup> = a&lt;sup>2&lt;/sup> + 2ab + b&lt;sup>2&lt;/sup></code></td>
+        <td>(a&nbsp;+&nbsp;b)<sup>2</sup>&nbsp;=&nbsp;a<sup>2</sup>&nbsp;+&nbsp;2ab&nbsp;+&nbsp;b<sup>2</sup></td>
+        <td>superscript text</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;blockquote cite="https://en.wikipedia.org/wiki/HTML">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.&lt;/blockquote></code></td>
+        <td><blockquote cite="https://en.wikipedia.org/wiki/HTML">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.</blockquote></td>
+        <td>quotation</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;q>To be, or not to be&lt;/q> is the opening phrase of a speech given by Prince Hamlet</code></td>
+        <td><q>To be, or not to be</q> is the opening phrase of a speech given by Prince&nbsp;Hamlet</td>
+        <td>short quotation</td>
     </tr>
     <tr>
         <td><code class="language-html">&lt;abbr title="HyperText Markup Language">HTML&lt;/abbr></code></td>
@@ -178,10 +216,39 @@ line 3&lt;/pre>
         <td colspan="3">Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.</td>
     </tr>
     <tr>
-        <td><code class="language-html">H&lt;sub>2&lt;/sub>O</code></td>
-        <td>H<sub>2</sub>O</td>
-        <td>subscript text</td>
+        <td><code class="language-html">&lt;address>&lt;a href="mailto:mail@example.com">mail@example.com&lt;/a>&lt;br />&lt;a href="https://www.dzyubak.com/">www.dzyubak.com&lt;/a>&lt;br />Box 111, Chicago&lt;br />USA&lt;/address></code></td>
+        <td><address><a href="mailto:mail@example.com">mail@example.com</a><br /><a href="https://www.dzyubak.com/">www.dzyubak.com</a><br />Box 111, Chicago<br />USA</address></td>
+        <td>contact information</td>
     </tr>
+    <tr>
+        <td colspan="3">contact information for the author/owner of a document or an article (e.g. email address, URL, physical address, phone number, social media handle, etc.)</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">Musical style of &lt;cite>Mazurka, Op. 17, No. 4&lt;/cite> by Frédéric Chopin</code></td>
+        <td>Musical style of <cite>Mazurka,&nbsp;Op.&nbsp;17,&nbsp;No.&nbsp;4</cite> by Frédéric Chopin</td>
+        <td>Citation element</td>
+    </tr>
+    <tr>
+        <td colspan="3">title of a creative work (e.g. book, musical score, song, movie, painting, computer program, forum post or comment, etc.)</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;bdo dir="rtl">right-to-left&lt;/bdo></code></td>
+        <td><bdo dir="rtl">right-to-left</bdo></td>
+        <td>bi-directional override</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;!-- HTML comment --></code></td>
+        <td><!-- HTML comment --></td>
+        <td>HTML comment</td>
+    </tr>
+    <!-- <tr>
+        <td><code class="language-html"></code></td>
+        <td></td>
+        <td></td>
+    </tr> -->
+    <!-- <tr>
+        <td colspan="3">more info</td>
+    </tr> -->
 </table>
         </div><!-- /.container -->
         <script src="vendor/js/jquery.min.js" type="text/javascript"></script>
