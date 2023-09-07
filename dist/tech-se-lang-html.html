@@ -44,14 +44,8 @@
 &lt;title>Page Title&lt;/title>
 &lt;/head>
 &lt;body>
-&lt;h1>My First Heading&lt;/h1>
-&lt;p title="I'm a tooltip">My first paragraph.&lt;/p>
-&lt;p style="font-size:50px;">font size 50px</p>
-&lt;p>&lt;a href="https://www.dzyubak.com">This is a link&lt;/a>&lt;/p>
-&lt;p style="color:red;">This is a red paragraph.&lt;/p>
-&lt;pre>fixed-width font line 1
-line 2
-line 3&lt;/pre>
+&lt;h1>Heading 1&lt;/h1>
+&lt;p>Paragraph&lt;/p>
 &lt;/body>
 &lt;/html></code></pre>
             </li>
@@ -179,8 +173,12 @@ line 3&lt;/pre>
         </td>
     </tr>
     <tr>
-        <td><code class="language-html">&lt;pre>preformatted text&lt;/pre></code></td>
-        <td><pre>preformatted text</pre></td>
+        <td><pre><code class="language-html">&lt;pre>line 1: preformatted text
+line 2: fixed-width font&lt;/pre></code></pre>
+        </td>
+        <td><pre>line 1: preformatted text
+line 2: fixed-width font</pre>
+        </td>
         <td>preformatted text</td>
     </tr>
     <tr>
@@ -279,6 +277,26 @@ line 3&lt;/pre>
         <td><code class="language-html">&lt;!-- HTML comment --></code></td>
         <td><!-- HTML comment --></td>
         <td>HTML comment</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;p title="Tooltip from title">Mouseover to see the tooltip.&lt;/p></code></td>
+        <td><p title="Tooltip from title">Mouseover to see the Tooltip.</p></td>
+        <td>tooltip</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;a href="https://www.dzyubak.com">Dmytro Dzyubak&lt;/a></code></td>
+        <td><a href="https://www.dzyubak.com">Dmytro Dzyubak</a></td>
+        <td>Anchor element, Hypertext REFerence attribute</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;p style="font-size:20px;">font size 20px&lt;/p></code></td>
+        <td><p style="font-size:20px;">font size 20px</p></td>
+        <td>style attribute, font-size</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;p style="color:red;">This is a red paragraph.&lt;/p></code></td>
+        <td><p style="color:red;">This is a red paragraph.</p></td>
+        <td>style attribute, color</td>
     </tr>
     <!-- <tr>
         <td><code class="language-html"></code></td>
