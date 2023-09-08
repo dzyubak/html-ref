@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>HTML ref-card</title>
+        <title>HTML Quick Reference</title>
         <link href="css/main.css" rel="stylesheet" type="text/css">
         <link href="vendor/css/prism.css" rel="stylesheet" />
         <style type="text/css">
@@ -33,7 +33,7 @@
     <body>
         <div class="container">
             <input type="button" id="expand-all" value="expand all" name="expand_all">
-<h1>HTML ref-card</h1>
+<h1>HTML Quick Reference</h1>
 <ul>
     <li>HTML Document
         <ul>
@@ -294,9 +294,49 @@ line 2: fixed-width font</pre>
         <td>style attribute, font-size</td>
     </tr>
     <tr>
-        <td><code class="language-html">&lt;p style="color:red;">This is a red paragraph.&lt;/p></code></td>
-        <td><p style="color:red;">This is a red paragraph.</p></td>
-        <td>style attribute, color</td>
+        <td><code class="language-html">&lt;p style="background-color:violet;color:red;border:3px solid DodgerBlue;">Paragraph in red text color, violet background color, and DodgerBlue border color.&lt;/p></code></td>
+        <td><p style="background-color:violet;color:red;border:3px solid DodgerBlue;">Paragraph in red text color, violet background color, and DodgerBlue border color.</p></td>
+        <td>style attribute, text color, background-color, border color</td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <ul>
+                <li>Color can be specified with predefined color names, or with HEX, RGB, HSL, RGBA, HSLA values
+                    <ul>
+                        <li><p style="background-color:orange;color:#0a2196;text-align:center;">style="background-color:orange;"</p></li>
+                        <li><p style="background-color:#ffa500;color:#0a2196;text-align:center;">style="background-color:#ff6347;"</p></li>
+                        <li><p style="background-color:rgb(255, 165, 0);color:#0a2196;text-align:center;">style="background-color:rgb(255, 165, 0);"</p></li>
+                        <li><p style="background-color:hsl(38.82, 100%, 50%);color:#0a2196;text-align:center;">style="background-color:hsl(38.82, 100%, 50%);"</p></li>
+                        <li>set an Alpha channel to 1 (= 0% transparency, same as rgb or hsl w/o using Alpha channel)
+                            <ul>
+                                <li><p style="background-color:rgba(255, 165, 0, 1);color:#0a2196;text-align:center;">style="background-color:rgba(255, 165, 0, 1);"</p></li>
+                                <li><p style="background-color:hsla(38.82, 100%, 50%, 1);color:#0a2196;text-align:center;">style="background-color:hsla(38.82, 100%, 50%, 1);"</p></li>
+                            </ul>
+                        </li>
+                        <li>set an Alpha channel to 0.5 (= 50% transparency)
+                            <ul>
+                                <li><p style="background-color:rgba(255, 165, 0, 0.5);color:#0a2196;text-align:center;">style="background-color:rgba(255, 165, 0, 0.5);"</p></li>
+                                <li><p style="background-color:hsla(38.82, 100%, 50%, 0.5);color:#0a2196;text-align:center;">style="background-color:hsla(38.82, 100%, 50%, 0.5);"</p></li>
+                            </ul>
+                        </li>
+                        <li>device-cmyk(0%, 35.29%, 100%, 0%) - device-cmyk() approach to color is useful when creating material to be output to a particular printer, when the output for particular ink combinations is known. CSS processors may attempt to approximate the color, however the end result is likely to be different to the printed result.</li>
+                    </ul>
+                </li>
+                <li>140 standard HTML Color Names https://www.w3schools.com/colors/colors_names.asp</li>
+                <li>rgb(0, 0, 0) and rgba(0, 0, 0, 1)
+                    <ul>
+                        <li>RGB - Red, Green, and Blue light sources + Alpha channel (opacity)</li>
+                        <li>rgb(red, green, blue) defines the intensity of the color with a value between 0 and 255.</li>
+                        <li>rgba(red, green, blue, alpha) alpha parameter defines transparency with a value between 0.0 (fully transparent) and 1.0 (not transparent at all)</li>
+                        <li>rgb(255, 0, 0) = red</li>
+                        <li>rgb(0, 0, 0) = black</li>
+                        <li>rgb(255, 255, 255) = white</li>
+                        <li>rgb(70, 70, 70), rgb(210, 210, 210) = shades of gray</li>
+                        <li>256 * 256 * 256 = 16777216 colors</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
     </tr>
     <!-- <tr>
         <td><code class="language-html"></code></td>
