@@ -289,11 +289,6 @@ line 2: fixed-width font</pre>
         <td>Anchor element, Hypertext REFerence attribute</td>
     </tr>
     <tr>
-        <td><code class="language-html">&lt;p style="font-size:20px;">font size 20px&lt;/p></code></td>
-        <td><p style="font-size:20px;">font size 20px</p></td>
-        <td>style attribute, font-size</td>
-    </tr>
-    <tr>
         <td><code class="language-html">&lt;p style="background-color:violet;color:red;border:3px solid DodgerBlue;">Paragraph in red text color, violet background color, and DodgerBlue border color.&lt;/p></code></td>
         <td><p style="background-color:violet;color:red;border:3px solid DodgerBlue;">Paragraph in red text color, violet background color, and DodgerBlue border color.</p></td>
         <td>style attribute, text color, background-color, border color</td>
@@ -384,6 +379,29 @@ line 2: fixed-width font</pre>
             </ul>
         </td>
     </tr>
+    <tr>
+        <td><code class="language-html">&lt;p style="margin:5px;padding:5px;border:3px solid red;">margin 5px, padding 5px, border 3px solid red&lt;/p></code></td>
+        <td><p style="margin:5px;padding:5px;border:3px solid red;">margin 5px, padding 5px, border 3px solid red</p></td>
+        <td>style attribute: margin property, padding property, border property</td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <ul>
+                <li>padding property defines a padding (space) between the text and the border</li>
+                <li>margin property defines a margin (space) outside the border</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;p style="font-size:20px;">font size 20px&lt;/p></code></td>
+        <td><p style="font-size:20px;">font size 20px</p></td>
+        <td>style attribute, font-size</td>
+    </tr>
+    <tr>
+        <td><code class="language-html">&lt;p style="font-family:courier;">font-family courier&lt;/p></code></td>
+        <td><p style="font-family:courier;">font-family courier</p></td>
+        <td>font-family</td>
+    </tr>
     <!-- <tr>
         <td><code class="language-html"></code></td>
         <td></td>
@@ -393,6 +411,57 @@ line 2: fixed-width font</pre>
         <td colspan="3">more info</td>
     </tr> -->
 </table>
+<h2>CSS</h2>
+<ul>
+    <li>CSS - Cascading Style Sheets</li>
+    <li>cascading means style applied to a parent element will also apply to all children elements</li>
+    <li>3 ways to add CSS
+        <ul>
+            <li class="collapsed">Inline
+                <ul>
+                    <li>index.html<pre><code class="language-html">&lt;p style="color:red;">Inline CSS&lt;/p></code></pre></li>
+                </ul>
+            </li>
+            <li class="collapsed">Internal
+                <ul>
+                    <li>index.html
+<pre><code class="language-html">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  &lt;style>
+    p {color: red;}
+  &lt;/style>
+&lt;/head>
+&lt;body>
+  &lt;p>Internal CSS&lt;/p>
+&lt;/body>
+&lt;/html></code></pre>
+                    </li>
+                </ul>
+            </li>
+            <li class="collapsed">External (recommended)
+                <ul>
+                    <li>/index.html
+<pre><code class="language-html">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  &lt;link rel="stylesheet" href="/css/main.css">
+&lt;/head>
+&lt;body>
+  &lt;p>External CSS&lt;/p>
+&lt;/body>
+&lt;/html></code></pre>
+                    </li>
+                    <li>/css/main.css
+<pre><code class="language-css">p {
+  color: red;
+}</code></pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
         </div><!-- /.container -->
         <script src="vendor/js/jquery.min.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
