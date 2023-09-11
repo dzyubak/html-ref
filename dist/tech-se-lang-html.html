@@ -159,7 +159,7 @@
                     <ul>
                         <li>Absolute URL <code class="language-html">&lt;img src="https://www.dzyubak.com/img/img1.jpg" alt="..." /></code></li>
                         <li>Relative URL, relative to the current page (begins w/o slash) <code class="language-html">&lt;img src="img1.jpg" alt="..." /></code></li>
-                        <li>Relative URL, relative to the current domain (begins w/ slash) <code class="language-html">&lt;img src="/media/img/img1.jpg" alt="..." /></code> (recommended, except for Google SEO, for example, not in <code class="language-html">rel="canonical"</code>)</li>
+                        <li>Relative URL, relative to the current domain (begins w/ slash) <code class="language-html">&lt;img src="/media/img/img1.jpg" alt="..." /></code></li>
                     </ul>
                 </li>
                 <li>The required alt attribute specifies an alternate text for an image</li>
@@ -287,6 +287,23 @@ line 2: fixed-width font</pre>
         <td><code class="language-html">&lt;a href="https://www.dzyubak.com">Dmytro Dzyubak&lt;/a></code></td>
         <td><a href="https://www.dzyubak.com">Dmytro Dzyubak</a></td>
         <td>Anchor element, Hypertext REFerence attribute</td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <ul>
+                <li>link href
+                    <ul>
+                        <li>Absolute URL <code class="language-html">&lt;a href="https://www.dzyubak.com/about.html">About Dmytro Dzyubak&lt;/a></code></li>
+                        <li>Relative URL, relative to the current page (begins w/o slash) <code class="language-html">&lt;a href="about.html">About Dmytro Dzyubak&lt;/a></code></li>
+                        <li>Relative URL, relative to the current domain (begins w/ slash) <code class="language-html">&lt;a href="/about.html">About Dmytro Dzyubak&lt;/a></code> (recommended)
+                            <ul>
+                                <li>except for Google SEO, for example, not in <code class="language-html">rel="canonical"</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
     </tr>
     <tr>
         <td><code class="language-html">&lt;p style="background-color:violet;color:red;border:3px solid DodgerBlue;">Paragraph in red text color, violet background color, and DodgerBlue border color.&lt;/p></code></td>
@@ -445,7 +462,7 @@ line 2: fixed-width font</pre>
 <pre><code class="language-html">&lt;!DOCTYPE html>
 &lt;html>
 &lt;head>
-  &lt;link rel="stylesheet" href="/css/main.css">
+  &lt;link rel="stylesheet" href="/css/main.css" />
 &lt;/head>
 &lt;body>
   &lt;p>External CSS&lt;/p>
@@ -456,6 +473,13 @@ line 2: fixed-width font</pre>
 <pre><code class="language-css">p {
   color: red;
 }</code></pre>
+                    </li>
+                    <li>link to CSS file
+                        <ul>
+                            <li>Absolute URL <code class="language-html">&lt;link rel="stylesheet" href="https://www.dzyubak.com/css/main.css" /></code></li>
+                            <li>Relative URL, relative to the current page (begins w/o slash) <code class="language-html">&lt;link rel="stylesheet" href="css/main.css" /></code></li>
+                            <li>Relative URL, relative to the current domain (begins w/ slash) <code class="language-html">&lt;link rel="stylesheet" href="/css/main.css" /></code> (recommended)</li>
+                        </ul>
                     </li>
                 </ul>
             </li>
