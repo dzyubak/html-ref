@@ -284,22 +284,36 @@ line 2: fixed-width font</pre>
         <td>tooltip</td>
     </tr>
     <tr>
-        <td><code class="language-html">&lt;a href="https://www.dzyubak.com">Dmytro Dzyubak&lt;/a></code></td>
-        <td><a href="https://www.dzyubak.com">Dmytro Dzyubak</a></td>
+        <td><code class="language-html">&lt;a href="https://www.dzyubak.com/" target="_blank">Dmytro Dzyubak&lt;/a></code><br /><code class="language-html">&lt;a href="https://openclipart.org/" target="_blank">&lt;img src="/img/smile.png" alt="smile face">&lt;/a></code></td>
+        <td><a href="https://www.dzyubak.com/" target="_blank">Dmytro Dzyubak</a><br /><a href="https://openclipart.org/" target="_blank"><img src="/img/smile.png" alt="smile face"></a></td>
         <td>Anchor element, Hypertext REFerence attribute</td>
     </tr>
     <tr>
         <td colspan="3">
             <ul>
-                <li>link href
+                <li>href attribute
                     <ul>
-                        <li>Absolute URL <code class="language-html">&lt;a href="https://www.dzyubak.com/about.html">About Dmytro Dzyubak&lt;/a></code></li>
-                        <li>Relative URL, relative to the current page (begins w/o slash) <code class="language-html">&lt;a href="about.html">About Dmytro Dzyubak&lt;/a></code></li>
-                        <li>Relative URL, relative to the current domain (begins w/ slash) <code class="language-html">&lt;a href="/about.html">About Dmytro Dzyubak&lt;/a></code> (recommended)
+                        <li>Absolute URL<pre><code class="language-html">&lt;a href="https://www.dzyubak.com/about.html">About Dmytro Dzyubak&lt;/a></code></pre></li>
+                        <li>Relative URL, relative to the current page - begins w/o slash<pre><code class="language-html">&lt;a href="about.html">About Dmytro Dzyubak&lt;/a></code></pre></li>
+                        <li>Relative URL, relative to the current domain - begins w/ slash (recommended)<pre><code class="language-html">&lt;a href="/about.html">About Dmytro Dzyubak&lt;/a></code></pre>
                             <ul>
                                 <li>except for Google SEO, for example, not in <code class="language-html">rel="canonical"</code></li>
                             </ul>
                         </li>
+                        <li>"mailto:" opens email program<pre><code class="language-html">&lt;a href="mailto:user@example.com">user@example.com&lt;/a></code></pre></li>
+                    </ul>
+                </li>
+                <li>target attribute specifies where to open the link
+                    <ul>
+                        <li><code class="language-html">target="_self"</code> same window (default)</li>
+                        <li><code class="language-html">target="_blank"</code> new window</li>
+                        <li><code class="language-html">target="_parent"</code> parent frame</li>
+                        <li><code class="language-html">target="_top"</code> the topmost browsing context (the "highest" context that's an ancestor of the current one). If no ancestors, behaves as _self</li>
+                    </ul>
+                </li>
+                <li>button as link
+                    <ul>
+                        <li><code class="language-html">&lt;button onclick="document.location='https://www.dzyubak.com/'">Dmytro Dzyubak&lt;/button></code></li>
                     </ul>
                 </li>
             </ul>
