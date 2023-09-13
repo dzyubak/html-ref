@@ -284,8 +284,8 @@ line 2: fixed-width font</pre>
         <td>tooltip</td>
     </tr>
     <tr>
-        <td><code class="language-html">&lt;a href="https://www.dzyubak.com/" target="_blank">Dmytro Dzyubak&lt;/a></code><br /><code class="language-html">&lt;a href="https://openclipart.org/" target="_blank">&lt;img src="/img/smile.png" alt="smile face">&lt;/a></code></td>
-        <td><a href="https://www.dzyubak.com/" target="_blank">Dmytro Dzyubak</a><br /><a href="https://openclipart.org/" target="_blank"><img src="/img/smile.png" alt="smile face"></a></td>
+        <td><code class="language-html">&lt;a href="https://www.dzyubak.com/" target="_blank">Dmytro Dzyubak&lt;/a></code><br /><code class="language-html">&lt;a href="https://openclipart.org/" target="_blank" title="Go to Openclipart website">&lt;img src="/img/smile.png" alt="smile face">&lt;/a></code></td>
+        <td><a href="https://www.dzyubak.com/" target="_blank">Dmytro Dzyubak</a><br /><a href="https://openclipart.org/" target="_blank" title="Go to Openclipart website"><img src="/img/smile.png" alt="smile face"></a></td>
         <td>Anchor element, Hypertext REFerence attribute</td>
     </tr>
     <tr>
@@ -300,7 +300,7 @@ line 2: fixed-width font</pre>
                                 <li>except for Google SEO, for example, not in <code class="language-html">rel="canonical"</code></li>
                             </ul>
                         </li>
-                        <li>"mailto:" opens email program<pre><code class="language-html">&lt;a href="mailto:user@example.com">user@example.com&lt;/a></code></pre></li>
+                        <li>"mailto:" scheme opens email program<pre><code class="language-html">&lt;a href="mailto:user@example.com">user@example.com&lt;/a></code></pre></li>
                     </ul>
                 </li>
                 <li>target attribute specifies where to open the link
@@ -309,6 +309,11 @@ line 2: fixed-width font</pre>
                         <li><code class="language-html">target="_blank"</code> new window</li>
                         <li><code class="language-html">target="_parent"</code> parent frame</li>
                         <li><code class="language-html">target="_top"</code> the topmost browsing context (the "highest" context that's an ancestor of the current one). If no ancestors, behaves as _self</li>
+                    </ul>
+                </li>
+                <li>title attribute, shown as a tooltip on mouseover
+                    <ul>
+                        <li><code class="language-html">&lt;a href="https://openclipart.org/" title="Go to Openclipart website">Openclipart&lt;/a></code></li>
                     </ul>
                 </li>
                 <li>button as link
