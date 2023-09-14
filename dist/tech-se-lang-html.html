@@ -316,9 +316,57 @@ line 2: fixed-width font</pre>
                         <li><code class="language-html">&lt;a href="https://openclipart.org/" title="Go to Openclipart website">Openclipart&lt;/a></code></li>
                     </ul>
                 </li>
-                <li>button as link
+                <li class="collapsed">button as link w/ JS
                     <ul>
                         <li><code class="language-html">&lt;button onclick="document.location='https://www.dzyubak.com/'">Dmytro Dzyubak&lt;/button></code></li>
+                    </ul>
+                </li>
+                <li>default link colors and text-decoration
+                    <ul>
+                        <li>unvisited link: underlined and blue</li>
+                        <li>visited link: underlined and purple</li>
+                        <li>active link: underlined and red</li>
+                    </ul>
+                </li>
+                <li class="collapsed">change default link color and text-decoration w/ CSS
+                    <ul>
+                        <li>
+<pre><code class="language-css">a:link {
+  color: green;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+  text-decoration: none;
+}
+a:hover {
+  color: green;
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+  text-decoration: none;
+}</code></pre>
+                        </li>
+                    </ul>
+                </li>
+                <li class="collapsed">link as button w/ CSS
+                    <ul>
+                        <li>
+<pre><code class="language-css">a:link, a:visited, a:active {
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: DarkGreen;
+  text-decoration: none;
+}</code></pre>
+                        </li>
                     </ul>
                 </li>
             </ul>
