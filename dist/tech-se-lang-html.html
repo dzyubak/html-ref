@@ -158,14 +158,21 @@
                 <li>link to source
                     <ul>
                         <li>Absolute URL <code class="language-html">&lt;img src="https://www.dzyubak.com/img/img1.jpg" alt="..." /></code></li>
-                        <li>Relative URL, relative to the current page (begins w/o slash) <code class="language-html">&lt;img src="img1.jpg" alt="..." /></code></li>
+                        <li>Relative URL, relative to the current page (begins w/o slash) <code class="language-html">&lt;img src="img1.jpg" alt="..." /></code>
+                            <ul>
+                                <li>or, if inside dir: <code class="language-html">&lt;img src="img/img1.jpg" alt="..." /></code></li>
+                            </ul>
+                        </li>
                         <li>Relative URL, relative to the current domain (begins w/ slash) <code class="language-html">&lt;img src="/media/img/img1.jpg" alt="..." /></code></li>
+                        <li>accepted image formats: .gif, .jpg, and .png</li>
                     </ul>
                 </li>
-                <li>The required alt attribute specifies an alternate text for an image</li>
+                <li>The required alt attribute specifies an alternate text for an image; shown, if src link can not be loaded</li>
                 <li>The &lt;img> tag should also contain width and height
                     <ul>
+                        <li>if width and height are not specified, the web page might flicker while the image loads</li>
                         <li><code class="language-html">&lt;img src="img1.jpg" alt="alternate text" width="100" height="200" /></code></li>
+                        <li><code class="language-html">&lt;img src="img1.jpg" alt="alternate text" style="width:100px;height:200px;" /></code></li>
                         <li>BUT better specify width and height in CSS class</li>
                     </ul>
                 </li>
