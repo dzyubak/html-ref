@@ -166,36 +166,36 @@
                         <li>Relative URL, relative to the current domain (begins w/ slash) <code class="language-html">&lt;img src="/media/img/img1.jpg" alt="..." /></code></li>
                         <li>image formats and browser support
                             <ul>
-                                <li>.jpg
+                                <li>.jpg - JPEG - Joint Photographic Expert Group image
                                     <ul>
                                         <li>browser support: all versions of Chrome, Edge, Firefox, Internet Explorer, Opera, and Safari</li>
                                     </ul>
                                 </li>
-                                <li>.png
+                                <li>.png - PNG - Portable Network Graphics
                                     <ul>
                                         <li>not supported: IE6</li>
                                         <li>PNG is preferred over JPEG for more precise reproduction of source images, or when transparency is needed</li>
                                     </ul>
                                 </li>
-                                <li>.gif
+                                <li>.gif - GIF - Graphics Interchange Format
                                     <ul>
                                         <li>browser support: all versions of Chrome, Edge, Firefox, Internet Explorer, Opera, and Safari</li>
                                         <li>for animation</li>
                                     </ul>
                                 </li>
-                                <li>.ico, .cur
+                                <li>.ico, .cur - ICO - Microsoft Icon
                                     <ul>
                                         <li>.ico - for favicon, must not be used in web content</li>
                                         <li>.cur - might be used for cursor</li>
                                     </ul>
                                 </li>
-                                <li>.svg
+                                <li>.svg - SVG - Scalable Vector Graphics
                                     <ul>
                                         <li>SVG (basic support) not supported: IE 8, Edge 18 requires workaround, Firefox 2 partial support, Safari 3.1 partial support</li>
                                         <li>vector image format; ideal for user interface elements, icons, diagrams, etc., that must be drawn accurately at different sizes</li>
                                     </ul>
                                 </li>
-                                <li>.apng
+                                <li>.apng - APNG - Animated Portable Network Graphics
                                     <ul>
                                         <li>not supported: Chrome 58, Firefox 2, Edge 18, Safari 7.1</li>
                                     </ul>
@@ -214,7 +214,7 @@
                         </li>
                     </ul>
                 </li>
-                <li>The required alt attribute specifies an alternate text for an image; shown, if src link can not be loaded</li>
+                <li>The required alt attribute specifies an alternate text for an image; shown, if src link can not be loaded / displayed</li>
                 <li>The &lt;img> tag should also contain width and height
                     <ul>
                         <li>if width and height are not specified, the web page might flicker while the image loads</li>
@@ -228,22 +228,22 @@
     </tr>
     <tr>
         <td>
-            <code class="language-html">&lt;p>&lt;img src="/img/smile.png" alt="smile face" style="float:left;width:50px;height:50px;" />p w/ img float:left&lt;/p></code><br />
+            <code class="language-html">&lt;p>&lt;img src="/img/smile.png" alt="smile face" style="float:left;width:50px;height:50px;" />float:left&lt;/p></code><br />
             <code class="language-html">&lt;p style="clear:both">&lt;img src="/img/smile.png" alt="smile face" style="float:right;width:50px;height:50px;" />clear:both, then image float:right inside paragraph&lt;/p></code>
         </td>
         <td>
-            <p><img src="/img/smile.png" alt="smile face" style="float:left;width:50px;height:50px;" />p w/ img float:left</p>
+            <p><img src="/img/smile.png" alt="smile face" style="float:left;width:50px;height:50px;" />float:left</p>
             <p style="clear:both"><img src="/img/smile.png" alt="smile face" style="float:right;width:50px;height:50px;" />clear:both, then image float:right inside paragraph</p>
         </td>
         <td>image float:left, clear:both, image float:right</td>
     </tr>
     <tr>
         <td>
-            <code class="language-html">&lt;p>&lt;img src="/img/smile.png" alt="smile face" style="float:left;width:50px;height:50px;" />p w/ img float:left&lt;/p></code><br />
-            <code class="language-html">&lt;p>&lt;img src="/img/smile.png" alt="smile face" style="float:right;width:50px;height:50px;" />image float:right inside paragraph; clear:both is N/A&lt;/p></code>
+            <code class="language-html">&lt;p>&lt;img src="/img/smile.png" alt="smile face" style="float:left;width:50px;height:50px;" />float:left&lt;/p></code><br />
+            <code class="language-html">&lt;p>&lt;img src="/img/smile.png" alt="smile face" style="float:right;width:50px;height:50px;" />image float:right inside paragraph; clear:both is not added&lt;/p></code>
         </td>
         <td>
-            <p><img src="/img/smile.png" alt="smile face" style="float:left;width:50px;height:50px;" />p w/ img float:left</p>
+            <p><img src="/img/smile.png" alt="smile face" style="float:left;width:50px;height:50px;" />float:left</p>
             <p><img src="/img/smile.png" alt="smile face" style="float:right;width:50px;height:50px;" />image float:right inside paragraph; clear:both is N/A</p>
         </td>
         <td>image float:left, image float:right, w/o clear:both</td>
