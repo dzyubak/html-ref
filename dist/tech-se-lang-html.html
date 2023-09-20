@@ -574,6 +574,44 @@ a:hover {
         <td><p style="font-family:courier;">font-family courier</p></td>
         <td>font-family</td>
     </tr>
+    <tr>
+        <td>
+            <code class="language-html">&lt;map name="plane"></code><br />
+            <code class="language-html">&lt;area shape="rect" coords="5,5,46,70" alt="rectangle" href="https://en.wikipedia.org/wiki/Rectangle" target="_blank" /></code><br />
+            <code class="language-html">&lt;area shape="circle" coords="107,22,20" alt="circle" href="https://en.wikipedia.org/wiki/Circle" target="_blank" /></code><br />
+            <code class="language-html">&lt;area shape="poly" coords="53,42,74,31,91,48,80,71,57,65" alt="polygon" href="https://en.wikipedia.org/wiki/Polygon" target="_blank" onclick="polyFunc()" /></code><br />
+            <code class="language-html">&lt;/map></code><br />
+            <code class="language-html">&lt;img src="/img/map.130x78.png" alt="plane with rectangle, circle, and polygon" usemap="#plane" /></code><br />
+            <code class="language-html">&lt;script>function polyFunc() { alert("Polygon Function"); }&lt;/script></code>
+        </td>
+        <td>
+            <map name="plane">
+                <area shape="rect" coords="5,5,46,70" alt="rectangle" href="https://en.wikipedia.org/wiki/Rectangle" target="_blank" />
+                <area shape="circle" coords="107,22,20" alt="circle" href="https://en.wikipedia.org/wiki/Circle" target="_blank" />
+                <area shape="poly" coords="53,42,74,31,91,48,80,71,57,65" alt="polygon" href="https://en.wikipedia.org/wiki/Polygon" target="_blank" onclick="polyFunc()" />
+            </map>
+            <img src="/img/map.130x78.png" alt="plane with rectangle, circle, and polygon" usemap="#plane" />
+            <script>function polyFunc() { alert("Polygon Function"); }</script>
+        </td>
+        <td>image map, image with clickable areas</td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <ul>
+                <li>workflow
+                    <ul>
+                        <li>create image for map element w/ Inkscape, save as .svg, export to .png</li>
+                        <li>resize w/ ImageMagick <code class="language-bash">convert -resize 130 map.png map.130x78.png</code></li>
+                        <li>find coordinates w/ GIMP</li>
+                    </ul>
+                </li>
+                <li>shape="rect" coords="x,y,x,y"</li>
+                <li>shape="circle" coords="x,y,radius"</li>
+                <li>shape="poly" coords="x,y,x,y,x,y,x,y,x,y"</li>
+                <li><code class="language-html">&lt;area shape="default"</code> defines the entire region</li>
+            </ul>
+        </td>
+    </tr>
     <!-- <tr>
         <td><code class="language-html"></code></td>
         <td></td>
