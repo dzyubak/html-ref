@@ -612,6 +612,51 @@ a:hover {
             </ul>
         </td>
     </tr>
+    <tr>
+        <td><code class="language-html">&lt;td style="background-image: url('/img/smile.png');">background-image&lt;/td></code></td>
+        <td style="background-image: url('/img/smile.png');">background-image</td>
+        <td>background image</td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <ul>
+                <li>set background-image on the whole page
+                    <ul>
+                        <li>background-image repeats horizontally and vertically (default)
+<pre><code class="language-css">body {
+  background-image: url('/img/smile.png');
+}</code></pre>
+                        </li>
+                        <li>disable repeating
+<pre><code class="language-css">body {
+  background-image: url('/img/smile.png');
+  background-repeat: no-repeat;
+}</code></pre>
+                        </li>
+                        <li>disable repeating, cover the entire element, no stretching
+                            <ul>
+                                <li>comment out background-attachment property and resize the window to see the difference</li>
+                            </ul>
+<pre><code class="language-css">body {
+  background-image: url('/img/smile.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}</code></pre>
+                        </li>
+                        <li>disable repeating, cover the entire element, stretch
+<pre><code class="language-css">body {
+  background-image: url('/img/smile.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}</code></pre>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
     <!-- <tr>
         <td><code class="language-html"></code></td>
         <td></td>
