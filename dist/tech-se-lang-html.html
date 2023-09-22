@@ -657,6 +657,26 @@ a:hover {
             </ul>
         </td>
     </tr>
+    <tr>
+        <td>
+            <code class="language-html">&lt;picture></code><br />
+            <code class="language-html">&lt;source media="(min-width: 200px)" srcset="/img/dino_200.png" /></code><br />
+            <code class="language-html">&lt;source media="(min-width: 100px)" srcset="/img/smile_100.png" /></code><br />
+            <code class="language-html">&lt;img src="/img/smile.png" /></code><br />
+            <code class="language-html">&lt;/picture></code>
+        </td>
+        <td>
+            <picture>
+                <source media="(min-width: 200px)" srcset="/img/dino_200.png" />
+                <source media="(min-width: 100px)" srcset="/img/smile_100.png" />
+                <img src="/img/smile.png" />
+            </picture>
+        </td>
+        <td>picture for different screen sizes</td>
+    </tr>
+    <tr>
+        <td colspan="3">always specify an &lt;img> element as the last child element of the &lt;picture> element, used either as default or for browsers that do not support &lt;img> element</td>
+    </tr>
     <!-- <tr>
         <td><code class="language-html"></code></td>
         <td></td>
