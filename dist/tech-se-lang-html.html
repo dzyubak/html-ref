@@ -662,20 +662,32 @@ a:hover {
             <code class="language-html">&lt;picture></code><br />
             <code class="language-html">&lt;source media="(min-width: 1000px)" srcset="/img/dino_100.png" /></code><br />
             <code class="language-html">&lt;source media="(min-width: 900px)" srcset="/img/grin_50.png" /></code><br />
-            <code class="language-html">&lt;img src="/img/smile.png" /></code><br />
+            <code class="language-html">&lt;img src="/img/smile.png" alt="smile face" /></code><br />
             <code class="language-html">&lt;/picture></code>
         </td>
         <td>
             <picture>
                 <source media="(min-width: 1000px)" srcset="/img/dino_100.png" />
                 <source media="(min-width: 900px)" srcset="/img/grin_50.png" />
-                <img src="/img/smile.png" />
+                <img src="/img/smile.png" alt="smile face" />
             </picture>
         </td>
-        <td>picture for different screen sizes</td>
+        <td>picture, different pictures on different conditions</td>
     </tr>
     <tr>
-        <td colspan="3">always specify an &lt;img> element as the last child element of the &lt;picture> element, used either as default or for browsers that do not support &lt;img> element</td>
+        <td colspan="3">
+            <ul>
+                <li>always specify an &lt;img> element as the last child element of the &lt;picture> element, used either as default or for browsers that do not support &lt;img> element</li>
+                <li>add images in different formats
+<pre><code class="language-html">&lt;picture>
+  &lt;source srcset="/img/img1.svg" />
+  &lt;source srcset="/img/img1.png" />
+  &lt;img src="/img/img1.jpg" alt="image" />
+&lt;/picture></code></pre>
+                </li>
+                <li>browser uses the first matched element and ignores any following elements</li>
+            </ul>
+        </td>
     </tr>
     <!-- <tr>
         <td><code class="language-html"></code></td>
